@@ -7065,7 +7065,7 @@ loglevel@^1.6.8:
   resolved "https://registry.npmjs.org/loglevel/-/loglevel-1.7.1.tgz"
   integrity sha512-Hesni4s5UkWkwCGJMQGAh71PaLUmKFM60dHvq0zi/vDhhrzuk+4GgNbTXJ12YYQJn6ZKBDNIjYcuQGKudvqrIw==
 
-loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -8073,13 +8073,6 @@ pify@^4.0.1:
   resolved "https://registry.npmjs.org/pify/-/pify-4.0.1.tgz"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
-pinch-zoom-element@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/pinch-zoom-element/-/pinch-zoom-element-1.1.1.tgz#ea86eb5fb93b2619bd70843ad012f07400e44c66"
-  integrity sha512-aqgz+Fqw2UgMUUfxWD3UEE9YsgEyHKSma4Y2YQG+PlgX/0sTMafP8X663VlMME6G04OWyU3u2uyG86fbFEajug==
-  dependencies:
-    pointer-tracker "^2.0.3"
-
 pinkie-promise@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/pinkie-promise/-/pinkie-promise-2.0.1.tgz"
@@ -8133,11 +8126,6 @@ pnp-webpack-plugin@1.6.4:
   integrity sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
   dependencies:
     ts-pnp "^1.1.6"
-
-pointer-tracker@^2.0.3:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/pointer-tracker/-/pointer-tracker-2.4.0.tgz#78721c2d2201486db11ec1094377f03023b621b3"
-  integrity sha512-pWI2tpaM/XNtc9mUTv42Rmjf6mkHvE8LT5DDEq0G7baPNhxNM9E3CepubPplSoSLk9E5bwQrAMyDcPVmJyTW4g==
 
 portfinder@^1.0.26:
   version "1.0.28"
@@ -9112,10 +9100,22 @@ react-dom@^17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
+react-easy-panzoom@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/react-easy-panzoom/-/react-easy-panzoom-0.4.4.tgz#b153951e270f579449af837aac5d215244b21e4a"
+  integrity sha512-1zgT6boDVPcrR3Egcz8KEVpM3fs50o22iIWPRlAqvev0/4nw5RnUNFsvmOJ/b5M2nd8MDGknLmyfBdhjoLB6+g==
+  dependencies:
+    warning "4.0.3"
+
 react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
+
+react-icons@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.2.0.tgz"
+  integrity sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ==
 
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
@@ -11078,6 +11078,13 @@ walker@^1.0.7, walker@~1.0.5:
   integrity sha1-L3+bj9ENZ3JisYqITijRlhjgKPs=
   dependencies:
     makeerror "1.0.x"
+
+warning@4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
+  dependencies:
+    loose-envify "^1.0.0"
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"

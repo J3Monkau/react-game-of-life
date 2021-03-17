@@ -2,9 +2,9 @@ import { FC } from "react";
 import styled from "styled-components";
 
 const CelWrapper = styled.button<{ alive?: boolean }>`
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
+  height: 15px;
+  width: 15px;
+  border-radius: 4px;
   background-color: ${({ alive }) => (alive ? "gray" : "lightblue")};
   &:hover {
     background-color: ${({ alive }) => (alive ? "lightgray" : "lightcyan")};

@@ -66,24 +66,16 @@ export const nextGeneration = (prevState: GameState) => {
   prevState.forEach((row, rIdx) => {
     row.forEach((col, cIdx) => {
       const numAlive = livingNeighbors(prevState, rIdx, cIdx);
-      switch (numAlive) {
-        case 0:
-        case 1:
-          newState[rIdx][cIdx] = false;
-          break;
-        case 2:
-        case 3:
+      const celAlive = prevState[rIdx][cIdx];
+
+      if (celAlive) {
+        if (numAlive === 3 || numAlive === 2) {
           newState[rIdx][cIdx] = true;
-          break;
-        case 4:
-        case 5:
-        case 6:
-        case 7:
-          newState[rIdx][cIdx] = false;
-          break;
-        default:
-          newState[rIdx][cIdx] = false;
-          break;
+        }
+      } else {
+        if (numAlive === 3) {
+          newState[rIdx][cIdx] = true;
+        }
       }
     });
   });

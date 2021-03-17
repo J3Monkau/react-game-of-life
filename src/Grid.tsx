@@ -8,6 +8,7 @@ const GridWrapper = styled.div<{ height: number; width: number }>`
   grid-gap: 7px;
   grid-template-rows: repeat(${({ height }) => height}, fit-content(100%));
   grid-template-columns: repeat(${({ width }) => width}, fit-content(100%));
+  z-index: 1;
 `;
 
 interface GridProps {

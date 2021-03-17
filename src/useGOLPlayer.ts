@@ -5,7 +5,7 @@ import { GameState } from "./types";
 const useGOLPlayer = (initialState: GameState) => {
   const [currentState, setCurrentState] = useState(initialState);
   const [updateInterval, setUpdateInterval] = useState(10);
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
     const timeout = playing
