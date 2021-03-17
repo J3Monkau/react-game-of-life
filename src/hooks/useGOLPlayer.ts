@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { nextGeneration, toggleCelState } from "./gol";
-import { GameState } from "./types";
+import { GameState, nextGeneration, toggleCelState } from "../domain/gol";
 
 const useGOLPlayer = (initialState: GameState) => {
   const [currentState, setCurrentState] = useState(initialState);
