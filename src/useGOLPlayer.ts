@@ -4,7 +4,7 @@ import { GameState } from "./types";
 
 const useGOLPlayer = (initialState: GameState) => {
   const [currentState, setCurrentState] = useState(initialState);
-  const [updateInterval, setUpdateInterval] = useState(10);
+  const [updateInterval] = useState(10);
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const useGOLPlayer = (initialState: GameState) => {
         )
       : null;
     return () => clearTimeout(timeout!);
-  }, [currentState, playing]);
+  }, [currentState, playing, updateInterval]);
 
   const toggleCel = (r: number, c: number) => {
     setCurrentState(toggleCelState(currentState, r, c));

@@ -1,4 +1,3 @@
-import { isBreakOrContinueStatement } from "typescript";
 import { GameSettings, GameState } from "./types";
 
 export const DEFAULT_GRID_HEIGHT = 40;
