@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
+import { GameState } from "../domain/gol";
 import { Cel } from "./Cel";
-import { GameState } from "./types";
 
 const GridWrapper = styled.div<{ height: number; width: number }>`
   display: grid;

@@ -1,4 +1,8 @@
-import { GameSettings, GameState } from "./types";
+export interface GameSettings {
+  height: number;
+  width: number;
+}
+export type GameState = Array<Array<boolean>>;
 
 export const DEFAULT_GRID_HEIGHT = 40;
 export const DEFAULT_GRID_WIDTH = 50;

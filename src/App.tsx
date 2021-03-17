@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import { Grid } from "./Grid";
-import { initialState } from "./gol";
-import useGOLPlayer from "./useGOLPlayer";
+import { Grid } from "./components/Grid";
+import { initialState } from "./domain/gol";
+import useGOLPlayer from "./hooks/useGOLPlayer";
 import styled from "styled-components";
 import { FaPlay, FaPause } from "react-icons/fa";
 
