@@ -1,6 +1,8 @@
 # Conway's Game of Life
 Game of life implementated with React.
 
+![recording](./docs/conway.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
